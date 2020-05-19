@@ -17,7 +17,9 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  if (findFn(array[i])) {
-    return array[i]
+  for (let i = 0; i < array.length; i++) {
+    if (findFn(array[i])) {
+      return array[i]
+    }
   }
 }
