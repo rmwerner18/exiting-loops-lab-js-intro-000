@@ -13,7 +13,7 @@ function keepGoing(array, changeValue, skipValue) {
       continue
     }
     array.shift(array[i])
-    array.unshift(changeValue)
+    array[i].unshift(changeValue)
   }
 }
 
