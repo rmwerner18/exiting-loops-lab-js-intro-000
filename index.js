@@ -3,7 +3,7 @@ function breakOut(array, changeValue, stopValue) {
     if (array[i] !== stopValue) {
       break
     }
-    array[i] => console.log(changeValue)
+    array.splice(array[0], array[stopValue], array[changeValue])
   }
   return array
 }
