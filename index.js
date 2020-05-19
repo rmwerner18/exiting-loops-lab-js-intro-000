@@ -3,7 +3,7 @@ function breakOut(array, changeValue, stopValue) {
     if (array[i] !== stopValue) {
       break
     }
-    array.shift()
+    array.shift(array[i])
   }
   return array
 }
