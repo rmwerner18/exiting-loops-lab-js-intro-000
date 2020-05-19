@@ -3,7 +3,7 @@ function breakOut(array, changeValue, stopValue) {
     if (array[i] !== stopValue) {
       break
     }
-    array[i] = changeValue
+    return array[i] = changeValue
   }
 }
 
@@ -12,8 +12,7 @@ function keepGoing(array, changeValue, skipValue) {
     if (array[i] !== skipValue) {
       continue
     }
-    array.shift(array[i])
-    array[i].unshift(changeValue)
+    
   }
 }
 
