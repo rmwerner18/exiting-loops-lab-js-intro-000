@@ -3,7 +3,7 @@ function breakOut(array, changeValue, stopValue) {
     if (array[i] !== stopValue) {
       break
     }
-    return array[i] = changeValue
+    array[i] = console.log(changeValue)
   }
   return array
 }
